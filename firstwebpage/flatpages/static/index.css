@@ -1,0 +1,89 @@
+/* тема «Квитанция»: светлая, «чистая», голубой и мятный цвета */
+body {
+    margin: 0;
+    padding: 32px 40px 40px 40px;
+    background-color: #eaf5f8;
+    /* «пузырьки» на фоне */
+    background-image:
+        radial-gradient(circle at 92% 12%, #d9eef4 0, #d9eef4 120px, transparent 121px),
+        radial-gradient(circle at 70% 4%, #ffffff 0, #ffffff 46px, transparent 47px);
+    background-repeat: no-repeat;
+    font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+    color: #17364d;
+}
+
+h1 {
+    /* заголовок первого уровня - шрифт с засечками */
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 40px;
+    font-weight: normal;
+    margin: 18px 0 8px 0;
+}
+
+h2 {
+    margin: 0 0 6px 0;
+    font-size: 20px;
+    font-weight: normal;
+    color: #5d7d90;
+}
+
+h3 {
+    display: inline-block;
+    margin: 6px 0 20px 0;
+    padding: 6px 14px;
+    background: #d3f0e8;
+    border-radius: 14px;
+    font-size: 15px;
+}
+
+table {
+    border-collapse: collapse;
+    /* ширина таблицы на 100% экрана */
+    width: 100%;
+    border: none;
+    background: #ffffff;
+    box-shadow: 0 8px 22px rgba(23, 54, 77, 0.09);
+}
+
+p, h4 {
+    font-size: 20px;
+    margin: 24px 0 8px 0;
+}
+
+h4 {
+    /* размер шрифта подзаголовков четвертого уровня изменен с 14px на 18px */
+    font-size: 18px;
+    color: #1596b8;
+}
+
+ul, ol {
+    margin: 0;
+    line-height: 1.7;
+}
+
+table tr th {
+    padding: 11px 14px;
+    border: none;
+    background: #d3f0e8;
+    font-size: 14px;
+    text-align: left;
+}
+
+table tr td {
+    padding: 10px 14px;
+    border: none;
+    /* пунктир - как линия отрыва на квитанции */
+    border-bottom: 2px dashed #c5dde6;
+}
+
+/* последний столбец - стоимость */
+table tr td:last-child {
+    color: #1596b8;
+    font-weight: bold;
+}
+
+img {
+    /* картинка высотой 30px */
+    height: 30px;
+    width: auto;
+}
